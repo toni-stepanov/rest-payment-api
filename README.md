@@ -24,7 +24,9 @@ Simple rest api.
  
 ## Get the source codes
 
-Get a copy of the source codes into your local system from https://github.com/toni-stepanov/rest-payment-api
+Get a copy of the source codes into your local system:
+    
+    git clone https://github.com/toni-stepanov/rest-payment-api
 
 ## Get the source codes
 
