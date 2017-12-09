@@ -7,6 +7,7 @@ Simple rest api.
 
 * Spring Boot
 * Spring Data JPA
+* H2 DB
 * Swagger
 * Spring Test/JUnit/Mockito/Rider
 * Lombok
@@ -30,9 +31,9 @@ Get a copy of the source codes into your local system:
 
 ## Get the source codes
 
-To build & run via command line shell:
+To build & run via command line shell from code directory:
 
-    ./gradlew clean build && java -server -jar build/libs/boot-rest.jar
+    ./gradlew clean build && java -jar build/libs/rest-payment-api-0.0.1-SNAPSHOT.jar
 
 Or simply run `TransferApplication.main()` via IDEA (14.1+ with latest Lombok plugin recommended) 
 or your favorite IDE.
