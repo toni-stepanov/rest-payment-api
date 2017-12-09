@@ -11,7 +11,6 @@ Simple rest api.
 * Swagger
 * Spring Test/JUnit/Mockito/Rider
 * Lombok
-* Bootstrap
 
 ## Requirements
 
