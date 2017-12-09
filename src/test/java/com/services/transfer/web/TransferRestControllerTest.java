@@ -2,7 +2,6 @@ package com.services.transfer.web;
 
 import com.services.transfer.controller.TransferController;
 import com.services.transfer.domain.AccountEntity;
-import com.services.transfer.domain.dto.Account;
 import com.services.transfer.service.AccountService;
 import com.services.transfer.service.TransferService;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -12,7 +11,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
