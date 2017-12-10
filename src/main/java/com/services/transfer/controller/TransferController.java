@@ -44,7 +44,7 @@ public class TransferController {
         return new ResponseEntity<String>(headers, HttpStatus.CREATED);
     }
 
-    @PutMapping("/api/transfer")
+    @PostMapping("/api/transfer")
     public ResponseEntity<?> transfer(@RequestBody final Transfer transfer){
         if (transfer == null || transfer.getFromName() == null || transfer.getToName() == null
                 || transfer.getAmount() <= 0) {

@@ -96,7 +96,7 @@ public class TransferRestControllerTest {
         ResponseEntity doneResponse = new ResponseEntity<>("done", HttpStatus.OK);
         when(transferService.transfer(any())).thenReturn(doneResponse);
         when(accountService.save(any())).thenReturn(new AccountEntity("toni", 5L));
-        mockMvc.perform(put("/api/transfer")
+        mockMvc.perform(post("/api/transfer")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\n" +
                         "  \"fromName\" : \"toni\",\n" +
@@ -112,7 +112,7 @@ public class TransferRestControllerTest {
         ResponseEntity doneResponse = new ResponseEntity<>("done", HttpStatus.OK);
         when(transferService.transfer(any())).thenReturn(doneResponse);
         when(accountService.save(any())).thenReturn(new AccountEntity("toni", 5L));
-        mockMvc.perform(put("/api/transfer")
+        mockMvc.perform(post("/api/transfer")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
